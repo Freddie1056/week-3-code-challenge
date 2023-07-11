@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Ticket API</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <h1>Movie Ticket API</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <div class="movie-details">
-        <div class="movie-poster">
-            <img id="poster" src="" alt="Movie Poster">
-        </div>
-        <div class="movie-info">
-            <h2 id="title"></h2>
-            <p><span class="label">Runtime:</span> <span id="runtime"></span></p>
-            <p><span class="label">Showtime:</span> <span id="showtime"></span></p>
-            <p><span class="label">Available Tickets:</span> <span id="available-tickets"></span></p>
-            <button id="buy-ticket-button">Buy Ticket</button>
-        </div>
-    </div>
+  <body>
+    <h1>Movie Ticket Booking</h1>
 
-    <div class="movie-menu">
-        <h2>Movie Menu</h2>
-        <ul id="films"></ul>
+    <div class="movie-container">
+      <div class="movie-details">
+        <img id="movie-poster" src="" alt="Movie Poster" />
+        <h2 id="movie-title"></h2>
+        <p id="movie-runtime"></p>
+        <p id="movie-showtime"></p>
+        <p id="movie-available-tickets"></p>
+        <button id="buy-ticket">Buy Ticket</button>
+      </div>
+
+      <ul id="films"></ul>
     </div>
 
     <script src="/main.js"></script>
-</body>
+  </body>
 </html>
